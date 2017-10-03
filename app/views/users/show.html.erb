@@ -12,7 +12,7 @@
 
 <p>
   <strong>First Blog:</strong>
-  <%= @user.microblogs.first.content %>
+  <%=  @user.microblogs.first&.content %>
 </p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
